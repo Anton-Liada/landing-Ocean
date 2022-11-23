@@ -87,14 +87,56 @@ meter {
   -webkit-user-drag: element;
 }
 
-.page {
-  font-family: "KyivTypeSerif", sans-serif;
-  font-size: medium;
-}
-
 @font-face {
   font-family: "KyivTypeSerif";
   src: url("./fonts/KyivTypeSerif-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
+}
+.container {
+  padding: 0 24px;
+}
+
+.page {
+  font-family: "Syncopate", sans-serif;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 20px;
+  color: #101010;
+}
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2.25rem;
+  }
+}
+.logo__span {
+  color: #24a9f4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  border-bottom: 1px solid #1A1A1A;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 111px;
+  }
+}
+.header__link {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__burger-menu {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

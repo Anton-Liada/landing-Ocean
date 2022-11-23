@@ -1,0 +1,14 @@
+@import "../utils";
+
+.logo {
+  display: inline-block;
+  @include font-style($fw-700, $fs-20, 20px);
+
+  @include pad {
+    font-size: $fs-36;
+  }
+
+  &__span {
+    color: $color-blue;
+  }
+}

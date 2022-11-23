@@ -1,0 +1,25 @@
+@import "../utils";
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  border-bottom: 1px solid $color-dark-gray;
+
+  @include desktop {
+    height: 111px;
+  }
+
+  &__link {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__burger-menu {
+    margin-left: auto;
+  }
+}

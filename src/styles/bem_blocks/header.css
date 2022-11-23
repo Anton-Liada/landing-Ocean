@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  border-bottom: 1px solid #1A1A1A;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 111px;
+  }
+}
+.header__link {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__burger-menu {
+  margin-left: auto;
+}/*# sourceMappingURL=header.css.map */
