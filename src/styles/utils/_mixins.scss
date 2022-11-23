@@ -1,0 +1,52 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} $transition-time;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin height-width($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin mobile {
+  @media (max-width: $media-pad-width - 1) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: $media-pad-width) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $media-desktop-width) {
+    @content;
+  }
+}
+
+@mixin wxga {
+  @media (min-width: $media-wxga-width) {
+    @content;
+  }
+}
+
+@mixin full {
+  @media (min-width: $media-full-width) {
+    @content;
+  }
+}
+
+@mixin container($size) {
+  padding-left: ($size);
+  padding-right: ($size);
+}
+
+@mixin font-style($weight, $size, $height, $color: $color-text) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}
