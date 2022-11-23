@@ -89,7 +89,7 @@ meter {
 
 .page {
   font-family: "KyivTypeSerif", sans-serif;
-  background: red;
+  font-size: medium;
 }
 
 @font-face {

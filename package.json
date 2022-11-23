@@ -1,0 +1,24 @@
+{
+  "name": "landing-ocean",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.3",
+    "@mate-academy/eslint-config": "0.0.20",
+    "@mate-academy/linthtml-config": "0.0.2",
+    "@mate-academy/scripts": "^1.2.8",
+    "@mate-academy/stylelint-config": "0.0.9",
+    "eslint": "^8.28.0",
+    "eslint-plugin-node": "^11.1.0",
+    "gh-pages": "^4.0.0",
+    "gulp-htmllint": "0.0.19",
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "parcel": "^2.8.0",
+    "stylelint": "^14.15.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-scss": "^4.3.0"
+  }
+}
