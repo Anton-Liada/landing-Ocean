@@ -6,13 +6,27 @@
   justify-content: center;
   align-items: center;
 
+  @include pad {
+    justify-content: start;
+    flex-direction: row;
+  }
+
   &__item {
     height: 48px;
     width: 100%;
     background-color: $color-white;
 
+    @include pad {
+      width: 196px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 16px;
+
+      @include pad {
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
     }
   }
 

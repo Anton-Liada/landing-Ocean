@@ -5,31 +5,67 @@
   color: $color-white;
   background-color: $color-text;
 
+  @include pad {
+    padding-top: 60px;
+  }
+
+  @include full {
+    padding-top: 56px;
+  }
+
   &__title {
     margin-bottom: 20px;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrapper {
+    @include full {
+      display: flex;
+    }
   }
 
   &__wrapper-subscribe {
     margin-bottom: 47px;
+
+    @include pad {
+      margin-bottom: 56px;
+    }
+
+    @include desktop {
+      margin-bottom: 62px;
+    }
+
+    @include full {
+      margin-right: 28px;
+      margin-bottom: 70px;
+    }
   }
 
   &__logo {
     margin-bottom: 47px;
+
+    @include pad {
+      margin-bottom: 53px;
+    }
+
+    @include desktop {
+      margin-bottom: 62px;
+    }
+
+    @include full {
+      margin-bottom: 67px;
+    }
   }
 
   &__wrapper-contact {
     margin-bottom: 60px;
-  }
-
-  &__link {
-    display: inline-block;
-    margin-bottom: 11px;
-    @include font-style($fw-700, $fs-18, 18px, $color-white);
-  }
-
-  &__link-description {
-    margin-bottom: 34px;
-    @include font-style($fw-400, $fs-13, 13px, $color-gray);
   }
 
   &__decorate-line {

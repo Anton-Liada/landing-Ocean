@@ -4,6 +4,7 @@
   &__main-title {
     padding-bottom: 16px;
     @include font-style($fw-700, $fs-36, 39px);
+    text-align: center;
     letter-spacing: 5.5px;
     text-transform: uppercase;
   }

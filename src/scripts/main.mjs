@@ -20,3 +20,7 @@ accordion.forEach((element) => {
     element.classList.toggle('accordion__content--active');
   });
 });
+
+document.querySelector('form').addEventListener("click", function(event){
+  event.preventDefault()
+});

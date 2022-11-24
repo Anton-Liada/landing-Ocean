@@ -1,0 +1,31 @@
+@import "../utils";
+
+.contact-list {
+  @include desktop {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 34px;
+      @include desktop {
+        margin-bottom: 0;
+        margin-right: 42px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 11px;
+    @include font-style($fw-700, $fs-18, 18px, $color-white);
+
+    @include pad {
+      font-size: $fs-16;
+    }
+  }
+
+  &__link-description {
+    @include font-style($fw-400, $fs-13, 13px, $color-gray);
+  }
+}

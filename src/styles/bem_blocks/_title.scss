@@ -8,5 +8,13 @@
     font-size: $fs-32;
     line-height: 33px;
     color: $color-white;
+
+    @include pad {
+      font-size: $fs-24 ;
+    }
+
+    @include desktop {
+      font-size: $fs-36 ;
+    }
   }
 }
