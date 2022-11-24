@@ -1,0 +1,62 @@
+@import "../utils";
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 34px;
+
+  &__input {
+    display:none;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 34px;
+    background-color: #575757;
+    -webkit-transition: $transition-time;
+    transition: all $transition-time;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 34px;
+      width: 34px;
+      left: 0;
+      bottom: 0;
+      background-image: url(./images/icons/light.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 1px solid #968f8f;
+      border-radius: 50%;
+      box-shadow: -2px 4px 5px #968f8f;
+      background-color: white;
+      -webkit-transition: $transition-time;
+      transition: $transition-time;
+    }
+  }
+
+  &__input:checked + &__slider {
+    background-color: #3D3D3D;
+  }
+
+  &__input:focus + &__slider {
+    box-shadow: 0 0 1px #3D3D3D;
+  }
+
+  &__input:checked + &__slider:before {
+    background-image: url(./images/icons/dark.svg);
+    background-color: #707070;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #968f8f;
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+}

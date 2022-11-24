@@ -1,5 +1,28 @@
 @import '../utils';
 
 .container {
+  max-width: 1696px;
+  margin: 0 auto;
   padding: 0 24px;
+
+  @include pad {
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0 39px;
+  }
+
+  @include wxga {
+    padding: 0 71px;
+  }
+
+  @include full {
+    padding: 0 114px;
+  }
+
+  &--burger-menu {
+    max-width: 1696px;
+    margin: 0 auto;
+  }
 }

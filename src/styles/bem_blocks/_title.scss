@@ -14,7 +14,12 @@
     }
 
     @include desktop {
-      font-size: $fs-36 ;
+      font-size: $fs-36;
+    }
+
+    @include full {
+      font-size: $fs-31;
+      letter-spacing: -1px;
     }
   }
 }

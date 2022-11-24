@@ -1,26 +1,35 @@
-'use strict';
-// import Swiper, { Navigation, Pagination } from 'swiper';
+"use strict";
 
-// const swiper = new Swiper('.swiper', {
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-const accordion = document.querySelectorAll('.accordion__content');
+  scrollbar: {
+    draggable: true,
+    el: '.swiper-scrollbar',
+  },
+});
+
+window.addEventListener("hashchange", () => {
+  if (window.location.hash === "#menu") {
+    document.body.classList.add("page__body--with-menu");
+  } else {
+    document.body.classList.remove("page__body--with-menu");
+  }
+});
+
+const accordion = document.querySelectorAll(".accordion__content");
 
 accordion.forEach((element) => {
-  element.addEventListener('click', () => {
-    element.classList.toggle('accordion__content--active');
+  element.addEventListener("click", () => {
+    element.classList.toggle("accordion__content--active");
   });
 });
 
-document.querySelector('form').addEventListener("click", function(event){
-  event.preventDefault()
+document.querySelector("form").addEventListener("click", function (event) {
+  event.preventDefault();
 });

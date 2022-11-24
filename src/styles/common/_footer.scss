@@ -28,6 +28,7 @@
   &__wrapper {
     @include full {
       display: flex;
+      margin-bottom: 70px;
     }
   }
 
@@ -44,7 +45,7 @@
 
     @include full {
       margin-right: 28px;
-      margin-bottom: 70px;
+      margin-bottom: 0;
     }
   }
 
@@ -66,6 +67,10 @@
 
   &__wrapper-contact {
     margin-bottom: 60px;
+
+    @include full {
+      margin-bottom: 0;
+    }
   }
 
   &__decorate-line {
