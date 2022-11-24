@@ -1,10 +1,10 @@
 @import "../utils";
 
 .accordion {
-  border-top: 1px solid $color-dark-gray;
+  border-top: 1px solid $color-text;
 
   &__content {
-    border-bottom: 1px solid $color-dark-gray;
+    border-bottom: 1px solid $color-text;
     cursor: pointer;
   }
 

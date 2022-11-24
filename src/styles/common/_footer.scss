@@ -1,0 +1,39 @@
+@import "../utils";
+
+.footer {
+  padding-top: 40px;
+  color: $color-white;
+  background-color: $color-text;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__wrapper-subscribe {
+    margin-bottom: 47px;
+  }
+
+  &__logo {
+    margin-bottom: 47px;
+  }
+
+  &__wrapper-contact {
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 11px;
+    @include font-style($fw-700, $fs-18, 18px, $color-white);
+  }
+
+  &__link-description {
+    margin-bottom: 34px;
+    @include font-style($fw-400, $fs-13, 13px, $color-gray);
+  }
+
+  &__decorate-line {
+    height: 57px;
+    background-color: $color-dark-gray;
+  }
+}

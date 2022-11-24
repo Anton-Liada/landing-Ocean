@@ -3,4 +3,10 @@
 .title {
   @include font-style($fw-700, $fs-24, 25px);
   text-transform: uppercase;
+
+  &--styles {
+    font-size: $fs-32;
+    line-height: 33px;
+    color: $color-white;
+  }
 }

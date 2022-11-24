@@ -13,44 +13,67 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <script type="text/javascript" defer src="scripts/main.mjs"></script>
   </head>
-  <body class="page__body container">
-    <header class="header page__header" id="header">
-      <a class="logo">Save<span class="logo__span">the</span>Ocean</a>
+  <body class="page__body">
+    <header class="header page__header container" id="header">
+      <div class="header__wrapper">
+        <a class="logo">Save<span class="logo__span">the</span>Ocean</a>
 
-      <div class="header__link">
-        <a href="tel:380931232323" class="header__link-phone"
-          >+38( 093 ) 123-23-23</a
+        <div class="header__link">
+          <a href="tel:380931232323" class="header__link-phone"
+            >+38( 093 ) 123-23-23</a
+          >
+
+          <span class="header__link-description">Mo-Fri 9:00-18:00</span>
+        </div>
+
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="header__burger-menu"
         >
-
-        <span class="header__link-description">Mo-Fri 9:00-18:00</span>
+          <rect
+            x="0.5"
+            y="0.5"
+            width="47"
+            height="47"
+            fill="#101010"
+            stroke="#101010"
+          />
+          <line
+            x1="12"
+            y1="15"
+            x2="36"
+            y2="15"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="12"
+            y1="23"
+            x2="36"
+            y2="23"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="12"
+            y1="31"
+            x2="36"
+            y2="31"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
       </div>
-
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="header__burger-menu"
-      >
-        <rect
-          x="0.5"
-          y="0.5"
-          width="47"
-          height="47"
-          fill="#101010"
-          stroke="#101010"
-        />
-        <line x1="12" y1="15" x2="36" y2="15" stroke="white" stroke-width="2" />
-        <line x1="12" y1="23" x2="36" y2="23" stroke="white" stroke-width="2" />
-        <line x1="12" y1="31" x2="36" y2="31" stroke="white" stroke-width="2" />
-      </svg>
     </header>
 
     <nav class="menu page__menu" id="menu"></nav>
 
     <main>
-      <section class="hero-section page__hero-section">
+      <section class="hero-section page__hero-section container">
         <h1 class="hero-section__main-title">
           about the
           <span class="hero-section__title-decorate"> project </span>
@@ -94,8 +117,8 @@
           <div class="swiper-button-next"></div>
 
           <div class="swiper-scrollbar"></div>
-        </div>
-      </section> -->
+        </div>-->
+      </section>
 
       <section class="news-section page__news-section">
         <h2 class="title">Latest News</h2>
@@ -103,54 +126,122 @@
         <div class="posts-swiper"></div>
       </section>
 
-      <section class="subscribe-section page__subscribe-section">
-        <h2 class="title subscribe-section__title">
-          subscribe to receive reports and breaking news from save the ocean
-          team
-        </h2>
+      <section class="subscribe-section page__subscribe-section container">
+        <div class="subscribe-section__wrapper">
+          <h2 class="title subscribe-section__title">
+            subscribe to receive reports and breaking news from save the ocean
+            team
+          </h2>
 
-        <form class="form" action="">
-          <label>
-            <input type="email" />
-          </label>
+          <form class="form subscribe-section__form" action="">
+            <label>
+              <input type="email" class="form__input" placeholder="Email" />
+            </label>
 
-          <button class="button" type="submit">send</button>
-        </form>
+            <button class="button" type="submit">send</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="logo"> Save<span class="logo__decorate">the</span>Ocean </a>
+      <div class="container">
+        <a class="logo logo--color footer__logo"
+          >Save<span class="logo__span">the</span>Ocean</a
+        >
+        <div class="footer__wrapper-subscribe">
+          <h2 class="title title--styles footer__title">
+            Subscribe to our social media
+          </h2>
 
-      <h2 class="title title--color footer__title">
-        Subscribe to our social media
-      </h2>
+          <ul class="social-links footer__social-links">
+            <li class="social-links__item">
+              <a href="/" class="social-links__link">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="social-links__svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+                    fill="#101010"
+                  />
+                </svg>
 
-      <a href="/" class="social-link">Facebook</a>
+                <div>Facebook</div>
+              </a>
+            </li>
 
-      <a href="/" class="social-link">Instagram</a>
+            <li class="social-links__item">
+              <a href="/" class="social-links__link">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="social-links__svg"
+                >
+                  <path
+                    d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z"
+                    fill="#101010"
+                  />
+                </svg>
+                <div>Instagram</div>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="/" class="social-links__link">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="social-links__svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"
+                    fill="#101010"
+                  />
+                </svg>
+                <div>Telegram</div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <a href="/" class="social-link">Telegram</a>
+        <div class="footer__wrapper-contact">
+          <h2 class="title title--styles footer__title">
+            do not hesitate to contact us
+          </h2>
 
-      <h2 class="title title--color footer__title">
-        do not hesitate to contact us
-      </h2>
+          <a href="tel:380931232323" class="footer__link"
+            >+38( 093 ) 123-23-23</a
+          >
 
-      <a href="tel:380931232323" class="footer__link">+38( 093 ) 123-23-23</a>
+          <p class="footer__link-description">Mo-Fri 9:00-18:00</p>
 
-      <p class="footer__link-description">Mo-Fri 9:00-18:00</p>
+          <a href="mailto:savetheocean@.org" class="footer__link"
+            >savetheocean@.org</a
+          >
 
-      <a href="mailto:savetheocean@.org" class="footer__link"
-        >savetheocean@.org</a
-      >
+          <p class="footer__link-description">for projects and questions</p>
 
-      <p class="footer__link-description">for projects and questions</p>
+          <a href="mailto:hrsavetheocean@.org" class="footer__link"
+            >hrsavetheocean@.org</a
+          >
 
-      <a href="mailto:hrsavetheocean@.org" class="footer__link"
-        >hrsavetheocean@.org</a
-      >
-
-      <p class="footer__link-description">for jobs</p>
+          <p class="footer__link-description">for jobs</p>
+        </div>
+      </div>
 
       <div class="footer__decorate-line"></div>
     </footer>
