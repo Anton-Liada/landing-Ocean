@@ -1,0 +1,30 @@
+@import "../utils";
+
+.accordion {
+  border-top: 1px solid $color-dark-gray;
+
+  &__content {
+    border-bottom: 1px solid $color-dark-gray;
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    @include font-style($fw-700, $fs-14, 22px);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    height: 0;
+    font-family: $ff-kyiv;
+    @include font-style($fw-400, $fs-14, 22px);
+    overflow: hidden;
+  }
+
+  & &__content--active &__text {
+    height: max-content;
+    padding-bottom: 16px;
+  }
+}

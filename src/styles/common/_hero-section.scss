@@ -1,0 +1,21 @@
+@import "../utils";
+
+.hero-section {
+  &__main-title {
+    padding-bottom: 16px;
+    @include font-style($fw-700, $fs-36, 39px);
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+  }
+
+  &__title-decorate {
+    font-size: 49px;
+    letter-spacing: 3.7px;
+    color: $color-white;
+    -webkit-text-stroke: 2px $color-blue;
+  }
+
+  &__accordion {
+    margin-bottom: 16px;
+  }
+}

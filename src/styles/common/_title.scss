@@ -1,0 +1,6 @@
+@import "../utils";
+
+.title {
+  @include font-style($fw-700, $fs-24, 25px);
+  text-transform: uppercase;
+}

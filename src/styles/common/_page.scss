@@ -2,4 +2,20 @@
 
 .page {
   font-family: $ff-syncopate;
+
+  &__header {
+    margin-bottom: 25px;
+
+    @include pad {
+      margin-bottom: 22px;
+    }
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
+
+    @include wxga {
+      margin-bottom: 32px;
+    }
+  }
 }

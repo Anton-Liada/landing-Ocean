@@ -1,7 +1,14 @@
 //common
 @import "./common/container";
 @import "./common/page";
+@import "./common/title";
+@import "./common/hero-section";
+@import "./common/subscribe-section";
+@import "./common/news-section";
 
 //bem blocks
-@import "./bem_blocks/logo.scss";
-@import "./bem_blocks/header.scss";
+@import "./bem_blocks/header";
+@import "./bem_blocks/logo";
+@import "./bem_blocks/accordion";
+@import "./bem_blocks/swiper";
+
