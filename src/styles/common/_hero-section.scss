@@ -7,13 +7,40 @@
     text-align: center;
     letter-spacing: 5.5px;
     text-transform: uppercase;
-  }
 
-  &__title-decorate {
-    font-size: 49px;
-    letter-spacing: 3.7px;
-    color: $color-white;
-    -webkit-text-stroke: 2px $color-blue;
+    @include pad {
+      font-size: $fs-72;
+      letter-spacing: 15px;
+      line-height: 80px;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      display: inline-block;
+      height: 100%;
+      width: 200px;
+      margin-bottom: 16px;
+      font-size: $fs-22;
+      line-height: 25px;
+      letter-spacing: 3px;
+    }
+
+    &--styles {
+      font-size: 49px;
+      letter-spacing: 3.7px;
+      color: $color-white;
+      -webkit-text-stroke: 2px $color-blue;
+
+      @include pad {
+        font-size: $fs-105;
+        letter-spacing: 6px;
+      }
+
+      @include desktop {
+        font-size: $fs-32;
+        letter-spacing: 0;
+      }
+    }
   }
 
   &__accordion {

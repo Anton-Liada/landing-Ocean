@@ -1,1 +1,136 @@
-@import '../utils';
+@import "../utils";
+
+.swiper {
+  min-height: 200px;
+  height: 200px;
+
+  @include pad {
+    height: 420px;
+  }
+
+  @include desktop {
+    height: 490px;
+  }
+
+  @include wxga {
+    height: 520px;
+  }
+
+  @include full {
+    height: 720px;
+  }
+}
+
+.hero {
+  &__slide1::before {
+    content: "1";
+  }
+
+  &__slide2::before {
+    content: "2";
+  }
+
+  &__slide3::before {
+    content: "3";
+  }
+
+  &__slide1::before,
+  &__slide2::before,
+  &__slide3::before {
+    position: absolute;
+    bottom: 15px;
+    left: 60px;
+    @include font-style($fw-700, $fs-18, 18px, $color-white);
+
+    @include pad {
+      font-size: $fs-24;
+    }
+
+    @include wxga {
+      font-size: $fs-36;
+      bottom: 35px;
+      left: 87px;
+    }
+  }
+
+  &__slide1::after,
+  &__slide2::after,
+  &__slide3::after {
+    content: " / 3";
+    position: absolute;
+    bottom: 16px;
+    left: 83px;
+    @include font-style($fw-400, $fs-18, 18px, $color-white);
+
+    @include pad {
+      font-size: $fs-24;
+    }
+
+    @include wxga {
+      font-size: $fs-36;
+      bottom: 37px;
+      left: 125px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__swiper-svg {
+    @include wxga {
+      height: 41px;
+      width: 47px;
+    }
+  }
+
+  &__swiper-btn {
+    @include wxga {
+      width: 47px;
+    }
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 4px;
+
+  @include wxga {
+    bottom: 25px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 17px;
+
+  @include wxga {
+    left: 27px;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  left: 126px;
+
+  @include pad {
+    left: 132px;
+  }
+
+  @include wxga {
+    left: 200px;
+  }
+}

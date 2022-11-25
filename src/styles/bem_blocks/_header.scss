@@ -8,8 +8,15 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    height: 82px;
+    justify-content: space-between;
+    min-height: 82px;
+    height: 100%;
     border-bottom: 1px solid $color-text;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
   }
 
   &__link {
@@ -18,10 +25,16 @@
     @include desktop {
       display: flex;
       flex-direction: column;
+      margin-right: 44px;
     }
   }
 
-  &__burger-menu {
-    margin-left: auto;
+  &__switch-wrapper {
+    display: none;
+
+    @include pad {
+      display: block;
+      margin: 0 42px 0 auto;
+    }
   }
 }
