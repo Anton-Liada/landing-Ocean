@@ -20,7 +20,7 @@
   <body class="page__body" id="body">
     <header class="header page__header container" id="header">
       <div class="header__wrapper">
-        <a class="logo">Save<span class="logo__span">the</span>Ocean</a>
+        <h1 class="logo">Save<span class="logo__span">the</span>Ocean</h1>
 
         <div class="header__right">
           <div class="header__link">
@@ -242,12 +242,107 @@
     <main>
       <section class="hero-section page__hero-section container">
         <div class="hero-section__wrapper">
-          <h1 class="hero-section__main-title">
+          <h2 class="hero-section__main-title">
             about the
             <span class="hero-section__main-title--styles"> project </span>
-          </h1>
+          </h2>
 
-          <div class="accordion hero-section__accordion">
+          <div class="accordion-container">
+            <div class="ac">
+              <h4 class="ac-header">
+                <button aria-expanded="false" class="ac-trigger">
+                  A nice place for powerful slogan
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ac-svg"
+                  >
+                    <path
+                      d="M2 1.90002L8 7.90002L2 13.9"
+                      stroke="#101010"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </h4>
+              <div class="ac-panel" style="height: 100%">
+                <p class="ac-text">
+                  The purpose of lorem ipsum is to create a natural looking
+                  block of text (sentence, paragraph, page, etc.) that doesn't
+                  distract from the layout. A practice not without controversy,
+                  laying out pages with meaningless filler text can be very
+                  useful when the focus is meant to be on design, not content.
+                </p>
+              </div>
+            </div>
+
+            <div class="ac">
+              <h4 class="ac-header">
+                <button class="ac-trigger">
+                  our projects
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ac-svg"
+                  >
+                    <path
+                      d="M2 1.90002L8 7.90002L2 13.9"
+                      stroke="#101010"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </h4>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Nulla et sodales nisl. Nam auctor quis odio eu congue. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="ac">
+              <h4 class="ac-header">
+                <button class="ac-trigger">
+                  our stories
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ac-svg"
+                  >
+                    <path
+                      d="M2 1.90002L8 7.90002L2 13.9"
+                      stroke="#101010"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </h4>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Nulla et sodales nisl. Nam auctor quis odio eu congue. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="accordion hero-section__accordion">
             <div class="accordion__content">
               <h4 class="accordion__title">A nice place for powerful slogan</h4>
 
@@ -273,39 +368,150 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
 
-        <div class="swiper">
+        <div class="swiper hero-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero__slide1">
-              <img src="./styles/images/img/slide1.jpg" alt="water" class="hero__img">
+              <img
+                src="./styles/images/img/slide1.jpg"
+                alt="water"
+                class="hero__img"
+              />
             </div>
             <div class="swiper-slide hero__slide2">
-              <img src="./styles/images/img/slide2.jpg" alt="dolphins" class="hero__img">
-              </div>
+              <img
+                src="./styles/images/img/slide2.jpg"
+                alt="dolphins"
+                class="hero__img"
+              />
+            </div>
             <div class="swiper-slide hero__slide3">
-              <img src="./styles/images/img/slide3.jpg" alt="flock of dolphins" class="hero__img">
-              </div>
+              <img
+                src="./styles/images/img/slide3.jpg"
+                alt="flock of dolphins"
+                class="hero__img"
+              />
+            </div>
           </div>
 
           <div class="swiper-button-prev hero__swiper-btn">
-            <svg width="24" height="21" viewBox="0 0 24 21" fill="white" xmlns="http://www.w3.org/2000/svg" class="hero__swiper-svg">
-              <path d="M23.6368 15.888H10.5972V20.5642C10.5972 20.7697 10.4344 20.9362 10.2335 20.9362C10.1322 20.9362 10.0409 20.8939 9.97486 20.8257L0.106495 10.7309C-0.0354985 10.5857 -0.0354985 10.3501 0.106495 10.2048L9.97597 0.108939C10.118 -0.0363129 10.3483 -0.0363129 10.4903 0.108939C10.5613 0.181561 10.5968 0.276773 10.5968 0.371984V5.04814H23.6364C23.8372 5.04814 24 5.21465 24 5.42013V15.516C24 15.7215 23.8372 15.888 23.6364 15.888L23.6368 15.888ZM10.2331 15.1441H23.2727V5.79185H10.2331C10.0322 5.79185 9.86946 5.62534 9.86946 5.41986V1.26978L0.877723 10.4678L9.86946 19.6658V15.5158C9.86946 15.3103 10.0322 15.1438 10.2331 15.1438V15.1441Z" fill="white"/>
-              </svg>
+            <svg
+              width="24"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+              class="hero__swiper-svg"
+            >
+              <path
+                d="M23.6368 15.888H10.5972V20.5642C10.5972 20.7697 10.4344 20.9362 10.2335 20.9362C10.1322 20.9362 10.0409 20.8939 9.97486 20.8257L0.106495 10.7309C-0.0354985 10.5857 -0.0354985 10.3501 0.106495 10.2048L9.97597 0.108939C10.118 -0.0363129 10.3483 -0.0363129 10.4903 0.108939C10.5613 0.181561 10.5968 0.276773 10.5968 0.371984V5.04814H23.6364C23.8372 5.04814 24 5.21465 24 5.42013V15.516C24 15.7215 23.8372 15.888 23.6364 15.888L23.6368 15.888ZM10.2331 15.1441H23.2727V5.79185H10.2331C10.0322 5.79185 9.86946 5.62534 9.86946 5.41986V1.26978L0.877723 10.4678L9.86946 19.6658V15.5158C9.86946 15.3103 10.0322 15.1438 10.2331 15.1438V15.1441Z"
+                fill="white"
+              />
+            </svg>
           </div>
           <div class="swiper-button-next hero__swiper-btn">
-            <svg width="47" height="41" viewBox="0 0 47 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__swiper-svg">
-              <path d="M0.71133 31.114H26.2472V40.2715C26.2472 40.6739 26.566 41 26.9594 41C27.1577 41 27.3366 40.9172 27.4659 40.7836L46.7914 21.0147C47.0695 20.7303 47.0695 20.2689 46.7914 19.9845L27.4637 0.213338C27.1857 -0.0711127 26.7346 -0.0711127 26.4566 0.213338C26.3175 0.355558 26.248 0.542013 26.248 0.728469V9.88595H0.712132C0.318764 9.88595 0 10.212 0 10.6144V30.3855C0 30.7879 0.318764 31.114 0.712132 31.114L0.71133 31.114ZM26.9602 29.6571H1.42428V11.3424H26.9602C27.3535 11.3424 27.6723 11.0163 27.6723 10.6139V2.48666L45.2811 20.4995L27.6723 38.5123V30.385C27.6723 29.9826 27.3535 29.6566 26.9602 29.6566V29.6571Z" fill="white"/>
-              </svg>
+            <svg
+              width="47"
+              height="41"
+              viewBox="0 0 47 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="hero__swiper-svg"
+            >
+              <path
+                d="M0.71133 31.114H26.2472V40.2715C26.2472 40.6739 26.566 41 26.9594 41C27.1577 41 27.3366 40.9172 27.4659 40.7836L46.7914 21.0147C47.0695 20.7303 47.0695 20.2689 46.7914 19.9845L27.4637 0.213338C27.1857 -0.0711127 26.7346 -0.0711127 26.4566 0.213338C26.3175 0.355558 26.248 0.542013 26.248 0.728469V9.88595H0.712132C0.318764 9.88595 0 10.212 0 10.6144V30.3855C0 30.7879 0.318764 31.114 0.712132 31.114L0.71133 31.114ZM26.9602 29.6571H1.42428V11.3424H26.9602C27.3535 11.3424 27.6723 11.0163 27.6723 10.6139V2.48666L45.2811 20.4995L27.6723 38.5123V30.385C27.6723 29.9826 27.3535 29.6566 26.9602 29.6566V29.6571Z"
+                fill="white"
+              />
+            </svg>
           </div>
 
-          <!-- <div class="swiper-scrollbar draggable"></div>
-        </div> -->
+          <!-- <div class="swiper-scrollbar draggable"></div> -->
+        </div>
       </section>
 
       <section class="news-section page__news-section">
-        <h2 class="title">Latest News</h2>
+        <h2 class="title news-section__title">Latest News</h2>
+
+        <div class="card-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-swiper__slide">
+              <div class="card">
+                <img
+                  src="./styles/images/img/laboratory.jpg"
+                  alt="laboratory"
+                  class="card__img"
+                />
+                <div class="card__wrapper">
+                  <h5 class="card__title">WHAT IS GYM?</h5>
+                  <p class="card__description">
+                    The Global Youth Mentor Program gives motivated Youth
+                    Leaders the tools and support to create lasting systemic
+                    change in their communities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-swiper__slide">
+              <div class="card">
+                <img
+                  src="./styles/images/img/ocean.jpg"
+                  alt="ocen"
+                  class="card__img"
+                />
+                <div class="card__wrapper">
+                  <h5 class="card__title">
+                    Here is the result of our last project in africa
+                  </h5>
+                  <p class="card__description">
+                    The purpose of lorem ipsum is to create a natural looking
+                    block of text (sentence,...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-swiper__slide">
+              <div class="card">
+                <img
+                  src="./styles/images/img/party.jpg"
+                  alt="party"
+                  class="card__img"
+                />
+                <div class="card__wrapper">
+                  <h5 class="card__title">
+                    Time to change something. There is no time left
+                  </h5>
+                  <p class="card__description">
+                    The purpose of lorem ipsum is to create a natural looking
+                    block of text (sentence, paragraph, page, etc.) that...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-swiper__slide">
+              <div class="card">
+                <img
+                  src="./styles/images/img/conference.jpg"
+                  alt="conference"
+                  class="card__img"
+                />
+                <div class="card__wrapper">
+                  <h5 class="card__title">
+                    How can we change the situation with the global warming
+                    cleaning the ocean?
+                  </h5>
+                  <p class="card__description">The purpose of lorem ipsu...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar draggable"></div>
+        </div>
 
         <div class="posts-swiper"></div>
       </section>
@@ -440,5 +646,10 @@
 
       <div class="footer__decorate-line"></div>
     </footer>
+    <script src="./scripts/accordion/accordion.min.js"></script>
+
+    <script>
+      new Accordion(".accordion-container");
+    </script>
   </body>
 </html>

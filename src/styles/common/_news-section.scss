@@ -1,5 +1,13 @@
 @import "../utils";
 
 .news-section {
-  margin-bottom: 56px;
+  max-width: 1696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  margin-bottom: 300px;
+
+  &__title {
+    margin-bottom: 24px;
+  }
 }

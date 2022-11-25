@@ -1,12 +1,41 @@
 @import "../utils";
 
 .hero-section {
-  &__main-title {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @include pad {
+      margin-bottom: 30px;
+    }
+
+    @include desktop {
+      width: 225px;
+      margin-right: 15px;
+    }
+
+    @include wxga {
+      width: 288px;
+      margin-bottom: 0;
+    }
+
+    @include full {
+      width: 400px;
+    }
+  }
+
+  &__main-title { // change naming!
     padding-bottom: 16px;
     @include font-style($fw-700, $fs-36, 39px);
     text-align: center;
     letter-spacing: 5.5px;
     text-transform: uppercase;
+    font-stretch: 150%;
 
     @include pad {
       font-size: $fs-72;
@@ -17,12 +46,20 @@
 
     @include desktop {
       display: inline-block;
-      height: 100%;
-      width: 200px;
       margin-bottom: 16px;
-      font-size: $fs-22;
+      font-size: $fs-24;
       line-height: 25px;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
+    }
+
+    @include wxga {
+      font-size: $fs-36;
+      line-height: 50px;
+      letter-spacing: 0;
+    }
+
+    @include full {
+      font-size: $fs-50;
     }
 
     &--styles {
@@ -38,7 +75,16 @@
 
       @include desktop {
         font-size: $fs-32;
+        letter-spacing: 5px;
+      }
+
+      @include wxga {
+        font-size: $fs-48;
         letter-spacing: 0;
+      }
+
+      @include full {
+        font-size: $fs-66;
       }
     }
   }

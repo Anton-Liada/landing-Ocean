@@ -1,0 +1,29 @@
+@import "../utils";
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 288px;
+  text-align: center;
+  font-family: arial;
+
+  &__img {
+    height: 167px;
+    padding-bottom: 11px;
+  }
+
+  &__wrapper {
+    padding: 0 24px 24px;
+    text-align: left;
+  }
+
+  &__title {
+    padding-bottom: 4px;
+    @include font-style($fw-700, $fs-16, 20px);
+  }
+
+  &__description {
+    @include font-style($fw-400, $fs-16, 24px);
+    font-family: $ff-kyiv;
+    flex-grow: 1;
+  }
+}
