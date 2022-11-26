@@ -5,6 +5,8 @@
   max-width: 288px;
   text-align: center;
   font-family: arial;
+  border: 1px solid $color-text;
+  @include hover(box-shadow,-7px 7px 1px $color-blue);
 
   &__img {
     height: 167px;
@@ -19,11 +21,21 @@
   &__title {
     padding-bottom: 4px;
     @include font-style($fw-700, $fs-16, 20px);
+
+    @include desktop {
+      font-size: $fs-14;
+      line-height: 17px;
+    }
   }
 
   &__description {
     @include font-style($fw-400, $fs-16, 24px);
     font-family: $ff-kyiv;
+    line-height: 20px;
     flex-grow: 1;
+
+    @include desktop {
+      font-size: $fs-14;
+    }
   }
 }

@@ -15,6 +15,7 @@
     height: 48px;
     width: 100%;
     background-color: $color-white;
+    @include hover(background-color, $color-blue);
 
     @include pad {
       width: 196px;

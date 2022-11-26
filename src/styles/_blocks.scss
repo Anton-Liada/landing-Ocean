@@ -1,4 +1,5 @@
 //common
+@import "./common/title";
 @import "./common/page";
 @import "./common/hero-section";
 @import "./common/subscribe-section";
@@ -7,7 +8,6 @@
 
 //bem blocks
 @import "./bem_blocks/menu";
-@import "./bem_blocks/title";
 @import "./bem_blocks/container";
 @import "./bem_blocks/header";
 @import "./bem_blocks/logo";

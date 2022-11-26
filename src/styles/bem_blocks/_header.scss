@@ -29,6 +29,10 @@
     }
   }
 
+  &__link-phone {
+    @include hover(text-shadow, $shadow-blue);
+  }
+
   &__switch-wrapper {
     display: none;
 
@@ -36,5 +40,78 @@
       display: block;
       margin: 0 42px 0 auto;
     }
+  }
+
+  &__burger-rect,
+  &__burger-line {
+    transition: $transition-time;
+  }
+
+  &__burger-svg:hover &__burger-rect {
+    fill: $color-white;
+  }
+
+  &__burger-svg:hover &__burger-line {
+    stroke: $color-text;
+  }
+}
+// background-color
+.dark-theme {
+  background-color: $color-text;
+  //color text
+  & .page__header,
+  h1,
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  a {
+    color: $color-white;
+  }
+  //header & menu
+  & .header__burger-svg .header__burger-rect {
+    fill: $color-white;
+  }
+
+  & .header__burger-svg:hover .header__burger-rect {
+    fill: $color-aqua;
+  }
+
+  & .header__burger-svg .header__burger-line {
+    stroke: $color-text;
+  }
+
+  & .header__burger-svg:hover .header__burger-line {
+    stroke: $color-white;
+  }
+
+  & .menu__container {
+    background-color: $color-text;
+  }
+
+  & .menu__social-svg {
+    fill: $color-white;
+  }
+
+  & .menu__cross-svg path {
+    stroke: $color-white;
+  }
+  //border
+  & .subscribe-section__wrapper {
+    border-color: $color-white;
+  }
+  //button hover
+  & .form__button {
+    background-color: $color-blue;
+    @include hover(background-color, $color-aqua);
+  }
+  //footer links
+  & .social-links__link {
+    color: $color-text;
+  }
+
+  & .page__footer {
+    background-color: $color-dark-gray2;
   }
 }

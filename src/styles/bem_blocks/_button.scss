@@ -1,8 +1,1 @@
 @import "../utils";
-
-.button {
-  height: 48px;
-  @include font-style($fw-700, $fs-16, 22px, $color-white);
-  text-transform: uppercase;
-  background-color: $color-text;
-}

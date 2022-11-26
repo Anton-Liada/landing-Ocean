@@ -3,7 +3,7 @@
 .menu {
   display: flex;
   justify-content: end;
-  max-width: 1696px;
+  max-width: 1924px;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -32,6 +32,13 @@
     margin-bottom: 19px;
   }
 
+  &__cross-svg {
+    @include wxga {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
   &__list {
     margin-bottom: 30vh;
   }
@@ -46,6 +53,7 @@
     display: block;
     @include font-style($fw-700, $fs-20, 20px);
     text-transform: uppercase;
+    @include hover(text-shadow, $shadow-blue);
 
     @include pad {
       font-size: $fs-32;
