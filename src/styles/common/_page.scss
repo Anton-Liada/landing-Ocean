@@ -47,6 +47,18 @@
     }
   }
 
+  &__news-section {
+    margin-bottom: 72px;
+
+    @include desktop {
+      margin-bottom: 59px;
+    }
+
+    @include wxga {
+      margin-bottom: 80px;
+    }
+  }
+
   &__subscribe-section {
     margin-bottom: 120px;
   }

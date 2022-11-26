@@ -11,7 +11,7 @@
     justify-content: space-between;
     min-height: 82px;
     height: 100%;
-    border-bottom: 1px solid $color-text;
+    border-bottom: 1px solid $color-black2;
   }
 
   &__right {
@@ -52,12 +52,12 @@
   }
 
   &__burger-svg:hover &__burger-line {
-    stroke: $color-text;
+    stroke: $color-black2;
   }
 }
 // background-color
 .dark-theme {
-  background-color: $color-text;
+  background-color: $color-black2;
   //color text
   & .page__header,
   h1,
@@ -79,7 +79,7 @@
   }
 
   & .header__burger-svg .header__burger-line {
-    stroke: $color-text;
+    stroke: $color-black2;
   }
 
   & .header__burger-svg:hover .header__burger-line {
@@ -87,7 +87,7 @@
   }
 
   & .menu__container {
-    background-color: $color-text;
+    background-color: $color-black2;
   }
 
   & .menu__social-svg {
@@ -96,6 +96,11 @@
 
   & .menu__cross-svg path {
     stroke: $color-white;
+  }
+//---------
+  & .card {
+    background-color: $color-dark-gray2;
+    border-color: $color-white;
   }
   //border
   & .subscribe-section__wrapper {
@@ -108,10 +113,11 @@
   }
   //footer links
   & .social-links__link {
-    color: $color-text;
+    color: $color-black2;
   }
 
   & .page__footer {
     background-color: $color-dark-gray2;
   }
+
 }

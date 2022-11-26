@@ -3,8 +3,8 @@
 .subscribe-section {
   &__wrapper {
     padding-top: 56px;
-    border-bottom: 1px solid $color-text;
-    border-top: 1px solid $color-text;
+    border-bottom: 1px solid $color-black2;
+    border-top: 1px solid $color-black2;
 
     @include desktop {
       padding-top: 94px;

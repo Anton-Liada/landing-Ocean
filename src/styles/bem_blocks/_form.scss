@@ -39,7 +39,7 @@
     width: 100%;
     @include font-style($fw-700, $fs-16, 22px, $color-white);
     text-transform: uppercase;
-    background-color: $color-text;
+    background-color: $color-black2;
     border: none;
     @include hover(background-color,$color-blue);
 

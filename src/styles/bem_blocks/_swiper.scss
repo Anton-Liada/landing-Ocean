@@ -2,36 +2,43 @@
 
 .card-swiper {
   position: relative;
-  height: 410px;
   overflow: hidden;
 
   &__slide {
-    display: flex;
-    max-height: 370px;
-    width: 288px; // space between cards
+    width: 288px;
+    min-height: 370px;
 
-    &:not(:last-child) {
-      margin-right: 16px;
+    @include full {
+      min-height: 400px;
     }
 
-    @include desktop {
-      width: 224px;
+    &:first-child {
+      @include desktop {
+        margin-left: 5px;
+      }
     }
   }
+
+  & > .swiper-wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+.swiper-slide {
+  height: initial;
 }
 
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   height: 16px;
-  left: 0;
+  left: 5px;
   background-color: $color-light-gray;
 }
 
 .swiper-scrollbar-drag {
   height: 16px;
   width: 200px;
-  background: $color-text;
-  background-color: $color-text;
+  background-color: $color-black2;
   border-radius: 0;
 }
 
@@ -41,8 +48,55 @@
 
 .draggable div {
   height: 16px;
-  background-color: $color-text;
+  background-color: $color-black2;
 }
+
+//card swaiper
+//-------------------------------------
+// .card-swiper {
+//   position: relative;
+//   height: 410px;
+//   overflow: hidden;
+
+//   &__slide {
+//     display: flex;
+//     max-height: 370px;
+//     width: 288px; // space between cards
+
+//     &:not(:last-child) {
+//       margin-right: 16px;
+//     }
+
+//     @include desktop {
+//       width: 224px;
+//     }
+//   }
+// }
+
+// .swiper-horizontal > .swiper-scrollbar,
+// .swiper-scrollbar.swiper-scrollbar-horizontal {
+//   height: 16px;
+//   left: 0;
+//   background-color: $color-light-gray;
+// }
+
+// .swiper-scrollbar-drag {
+//   height: 16px;
+//   width: 200px;
+//   background-color: $color-black2;
+//   border-radius: 0;
+// }
+
+// .swiper-scrollbar {
+//   border-radius: 0;
+// }
+
+// .draggable div {
+//   height: 16px;
+//   background-color: $color-black2;
+// }
+
+//-------------------------------
 
 .hero {
   .swiper {
@@ -150,7 +204,7 @@
   bottom: 4px;
 
   @include wxga {
-    bottom: 25px;
+    bottom: 26.5px;
   }
 }
 

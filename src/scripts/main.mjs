@@ -11,8 +11,32 @@ const swiper = new Swiper(".swiper", {
 });
 
 const cardSwiper = new Swiper(".card-swiper", {
-  slidesPerView: 'auto',
-
+  // slidesPerView: 'auto',
+  loop: false,
+  autoHeight: false,
+  spaceBetween: 10,
+  breakpoints: {
+    375: {
+      slidesPerView: 1.2,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 3.2,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 4.02,
+      spaceBetween: 16,
+    },
+    1366: {
+      slidesPerView: 4.01,
+      spaceBetween: 24,
+    },
+    1696: {
+      slidesPerView: 4.01,
+      spaceBetween: 32,
+    },
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
@@ -42,19 +66,19 @@ document.querySelector("form").addEventListener("click", (event) => {
   event.preventDefault();
 });
 
-const toggleSwitch = document.querySelector(".switch__input" );
+const toggleSwitch = document.querySelector(".switch__input");
 const toggleSwitchMenu = document.querySelector(".switch__input-menu");
 
 function switchTheme(e) {
   console.log(e);
-  if(e.target.checked) {
-    document.body.classList.add('dark-theme');
+  if (e.target.checked) {
+    document.body.classList.add("dark-theme");
     // document.documentElement.setAttribute('data-theme', 'dark');
   } else {
-    document.body.classList.remove('dark-theme');
+    document.body.classList.remove("dark-theme");
     // document.documentElement.setAttribute('data-theme', 'light');
   }
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
-toggleSwitchMenu.addEventListener('change', switchTheme, false);
+toggleSwitch.addEventListener("change", switchTheme, false);
+toggleSwitchMenu.addEventListener("change", switchTheme, false);
