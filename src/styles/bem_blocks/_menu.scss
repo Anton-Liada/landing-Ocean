@@ -1,26 +1,29 @@
 @import "../utils";
 
 .menu {
-  position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: end;
+  max-width: 1696px;
+  width: 100%;
   height: 100%;
-  width: 303px;
-  margin-left: auto;
-  margin-bottom: 50px;
-  padding: 16px 30px 38px;
-  background-color: $color-white;
   z-index: 2;
 
-  @include pad {
-    width: 440px;
-  }
+  &__container {
+    width: 303px;
+    padding: 16px 30px 38px;
+    background-color: $color-white;
 
-  @include wxga {
-    width: 487px;
-  }
+    @include pad {
+      width: 440px;
+    }
 
-  @include full {
-    width: 544px;
+    @include wxga {
+      width: 487px;
+    }
+
+    @include full {
+      width: 544px;
+    }
   }
 
   &__cross {
@@ -30,19 +33,7 @@
   }
 
   &__list {
-    margin-bottom: 210px;
-
-    @include pad {
-      margin-bottom: 404px;
-    }
-
-    @include desktop {
-      margin-bottom: 150px;
-    }
-
-    @include full {
-      margin-bottom: 360px;
-    }
+    margin-bottom: 30vh;
   }
 
   &__list-item {

@@ -21,12 +21,19 @@
 
 .swiper-scrollbar-drag {
   height: 16px;
+  width: 200px;
+  background: $color-text;
   background-color: $color-text;
   border-radius: 0;
 }
 
 .swiper-scrollbar {
   border-radius: 0;
+}
+
+.draggable div {
+  height: 16px;
+  background-color: $color-text;
 }
 
 .hero {

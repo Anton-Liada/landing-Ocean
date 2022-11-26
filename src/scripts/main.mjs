@@ -16,6 +16,7 @@ const cardSwiper = new Swiper(".card-swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
+    dragClass: true,
   },
 });
 
@@ -40,3 +41,4 @@ window.addEventListener("hashchange", () => {
 document.querySelector("form").addEventListener("click", function (event) {
   event.preventDefault();
 });
+
