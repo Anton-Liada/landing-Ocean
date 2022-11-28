@@ -1,0 +1,49 @@
+@import "../utils";
+
+.subscribe-section {
+  &__wrapper {
+    padding-top: 56px;
+    border-bottom: 1px solid $color-black2;
+    border-top: 1px solid $color-black2;
+
+    @include desktop {
+      padding-top: 94px;
+    }
+
+    @include wxga {
+      padding-top: 88px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 24px;
+    text-align: center;
+
+    @include pad {
+      width: 592px;
+    }
+
+    @include desktop {
+      width: 100%;
+      font-size: $fs-32;
+      line-height: 33px;
+    }
+
+    @include wxga {
+      width: 1109px;
+      font-size: $fs-36;
+    }
+  }
+
+  &__form {
+    margin-bottom: 56px;
+
+    @include desktop {
+      margin-bottom: 94px;
+    }
+
+    @include wxga {
+      margin-bottom: 88px;
+    }
+  }
+}

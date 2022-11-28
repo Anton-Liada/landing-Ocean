@@ -1,0 +1,102 @@
+@import "../utils";
+
+.wrapper-accordion {
+  height: auto;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  width: 100%;
+
+  &:first-child {
+    border-top: 1px solid $color-black2;
+  }
+
+  &__panel {
+    background-color: #fff;
+    border: none;
+    overflow: hidden;
+    transition: height $transition-time ease-in-out;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    @include font-style($fw-700, $fs-14, 15px);
+    text-align: start;
+    text-transform: uppercase;
+    background-color: $color-white;
+    border: none;
+    border-bottom: 1px solid $color-black2;
+    @include hover(color, $color-blue);
+
+    @include wxga {
+      font-size: $fs-16;
+      line-height: 16px;
+    }
+
+    @include full {
+      padding: 24px 0;
+    }
+
+    &:hover path {
+      stroke: $color-blue;
+    }
+  }
+
+  &__svg {
+    width: 5%;
+    margin-left: 20px;
+    opacity: 1;
+    transition: opacity $transition-time;
+
+    .is-active-ac & {
+      opacity: 0;
+    }
+
+    & path {
+      transition: stroke $transition-time;
+    }
+  }
+
+  &__content {
+    display: none;
+    font-family: $ff-kyiv;
+    @include font-style($fw-400, $fs-14, 22px);
+    transition: height $transition-time ease-in-out;
+    overflow: hidden;
+
+    @include wxga {
+      font-size: $fs-16;
+      line-height: 24px;
+    }
+
+    .is-active-ac & {
+      display: block;
+      border-bottom: 1px solid $color-black2;
+    }
+  }
+
+  &__inner {
+    height: 100%;
+    padding: 16px 0;
+
+    @include desktop {
+      padding: 8px 0;
+    }
+
+    @include wxga {
+      padding: 10px 0;
+    }
+
+    @include full {
+      padding: 27px 0 200px;
+    }
+  }
+}

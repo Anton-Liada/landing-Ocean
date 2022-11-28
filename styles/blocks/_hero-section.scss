@@ -1,0 +1,113 @@
+@import "../utils";
+
+.hero-section {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @include pad {
+      margin-bottom: 30px;
+    }
+
+    @include desktop {
+      width: 230px;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+
+    @include wxga {
+      width: 288px;
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+
+    @include full {
+      width: 400px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 16px;
+    @include font-style($fw-700, $fs-36, 39px);
+    text-align: center;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+
+    @include pad {
+      font-size: $fs-72;
+      letter-spacing: 15px;
+      line-height: 80px;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-size: $fs-24;
+      line-height: 25px;
+      letter-spacing: 5px;
+    }
+
+    @include wxga {
+      font-size: $fs-36;
+      line-height: 50px;
+      letter-spacing: 0;
+    }
+
+    @include full {
+      font-size: $fs-50;
+      line-height: 65px;
+    }
+
+    &--styles {
+      font-size: 49px;
+      letter-spacing: 3.7px;
+      color: $color-white;
+      -webkit-text-stroke: 2px $color-blue;
+
+      @include pad {
+        font-size: $fs-105;
+        letter-spacing: 6px;
+      }
+
+      @include desktop {
+        font-size: $fs-32;
+        letter-spacing: 5px;
+      }
+
+      @include wxga {
+        font-size: $fs-48;
+        letter-spacing: 0;
+      }
+
+      @include full {
+        font-size: $fs-66;
+      }
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+
+    @include desktop {
+      height: 491px;
+    }
+
+    @include wxga {
+      height: 522px;
+    }
+
+    @include full {
+      height: 722px;
+    }
+  }
+
+  &__accordion {
+    margin-bottom: 16px;
+  }
+}
