@@ -31,6 +31,14 @@ meter {
   appearance: revert;
 }
 
+::-moz-placeholder {
+  color: unset;
+}
+
+:-ms-input-placeholder {
+  color: unset;
+}
+
 ::placeholder {
   color: unset;
 }
@@ -1676,4 +1684,4 @@ svg:hover .menu__social-svg {
   background-color: #272727;
 }
 
-/*# sourceMappingURL=index.5525e4b8.css.map */
+/*# sourceMappingURL=index.af20ad6e.css.map */
