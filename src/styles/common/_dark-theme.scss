@@ -1,64 +1,8 @@
 @import "../utils";
 
-.header {
-  @include desktop {
-    height: 111px;
-  }
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 82px;
-    height: 100%;
-    border-bottom: 1px solid $color-black2;
-  }
-
-  &__right {
-    display: flex;
-    align-items: center;
-  }
-
-  &__link {
-    display: none;
-
-    @include desktop {
-      display: flex;
-      flex-direction: column;
-      margin-right: 44px;
-    }
-  }
-
-  &__link-phone {
-    @include hover(text-shadow, $shadow-blue);
-  }
-
-  &__switch-wrapper {
-    display: none;
-
-    @include pad {
-      display: block;
-      margin: 0 42px 0 auto;
-    }
-  }
-
-  &__burger-rect,
-  &__burger-line {
-    transition: all $transition-time;
-  }
-
-  &__burger-svg:hover &__burger-rect {
-    fill: $color-white;
-  }
-
-  &__burger-svg:hover &__burger-line {
-    stroke: $color-black2;
-  }
-}
-// background-color
 .dark-theme {
   background-color: $color-dark-theme;
-  //color text
+
   & .page__header,
   h1,
   p,
@@ -69,23 +13,27 @@
   a {
     color: $color-white;
   }
-  //header & menu
+
   & .header__wrapper {
     border-color: $color-white;
   }
-  & .header__burger-svg .header__burger-rect {
+  & .header__burger-svg
+  .header__burger-rect {
     fill: $color-white;
   }
 
-  & .header__burger-svg:hover .header__burger-rect {
+  & .header__burger-svg:hover
+  .header__burger-rect {
     fill: $color-aqua;
   }
 
-  & .header__burger-svg .header__burger-line {
+  & .header__burger-svg
+  .header__burger-line {
     stroke: $color-black2;
   }
 
-  & .header__burger-svg:hover .header__burger-line {
+  & .header__burger-svg:hover
+  .header__burger-line {
     stroke: $color-white;
   }
 
@@ -101,12 +49,20 @@
     stroke: $color-white;
   }
 
-  // accordion
   & .accordion__btn,
   .accordion__content,
   .accordion__panel {
     color: $color-white;
     background-color: $color-dark-theme;
+  }
+
+  & .accordion__btn:hover
+  path {
+    stroke: $color-blue;
+  }
+
+  & .accordion__btn {
+    @include hover(color, $color-blue);
   }
 
   & .accordion:first-child {
@@ -117,11 +73,13 @@
     border-color: $color-white;
   }
 
-  & .is-active-ac .accordion__content {
+  & .is-active-ac
+  .accordion__content {
     border-color: $color-white;
   }
 
-  & .accordion__svg path {
+  & .accordion__svg
+  path {
     stroke: $color-white;
   }
 
@@ -129,7 +87,6 @@
     background-color: $color-dark-gray3;
   }
 
-  //---------
   & .card {
     background-color: $color-dark-gray2;
     border-color: $color-white;
@@ -139,20 +96,21 @@
     }
   }
 
-  & .draggable div{
+  & .draggable
+  div {
     border: 1px solid $color-white;
     background-color: $color-dark-gray3;
   }
-  //border
+
   & .subscribe-section__wrapper {
     border-color: $color-white;
   }
-  //button hover
+
   & .form__button {
     background-color: $color-blue;
     @include hover(background-color, $color-aqua);
   }
-  //footer links
+
   & .social-links__link {
     color: $color-black2;
   }

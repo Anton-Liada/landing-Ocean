@@ -1,18 +1,17 @@
-"use strict";
+'use strict';
 
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
-//swiper
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
   fadeEffect: { crossFade: true, },
   effect: 'fade',
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
-const cardSwiper = new Swiper(".card-swiper", {
+const cardSwiper = new Swiper('.card-swiper', {
   loop: false,
   autoHeight: false,
   spaceBetween: 10,
@@ -20,6 +19,18 @@ const cardSwiper = new Swiper(".card-swiper", {
     375: {
       slidesPerView: 1.2,
       spaceBetween: 24,
+    },
+    400: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    600: {
+      slidesPerView: 2.5,
+      spaceBetween: 16,
     },
     768: {
       slidesPerView: 3.2,
@@ -39,47 +50,35 @@ const cardSwiper = new Swiper(".card-swiper", {
     },
   },
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: '.swiper-scrollbar',
     draggable: true,
     dragClass: true,
   },
 });
 
-//burger-menu
-window.addEventListener("hashchange", () => {
-  if (window.location.hash === "#menu") {
-    document.body.classList.add("page__body--with-menu");
+window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#menu') {
+    document.body.classList.add('page__body--with-menu');
   } else {
-    document.body.classList.remove("page__body--with-menu");
+    document.body.classList.remove('page__body--with-menu');
   }
 });
 
-// const accordion = document.querySelectorAll(".accordion__content");
-
-// accordion.forEach((element) => {
-//   element.addEventListener("click", () => {
-//     element.classList.toggle("accordion__content--active");
-//   });
-// });
-
-// button-send
-document.querySelector("form").addEventListener("click", (event) => {
+document.querySelector('form').addEventListener('click', (event) => {
   event.preventDefault();
 });
 
-const toggleSwitch = document.querySelector(".switch__input");
-const toggleSwitchMenu = document.querySelector(".switch__input-menu");
+const toggleSwitch = document.querySelector('.switch__input');
+const toggleSwitchMenu = document.querySelector('.switch__input-menu');
 
 function switchTheme(e) {
   console.log(e);
   if (e.target.checked) {
-    document.body.classList.add("dark-theme");
-    // document.documentElement.setAttribute('data-theme', 'dark');
+    document.body.classList.add('dark-theme');
   } else {
-    document.body.classList.remove("dark-theme");
-    // document.documentElement.setAttribute('data-theme', 'light');
+    document.body.classList.remove('dark-theme');
   }
 }
 
-toggleSwitch.addEventListener("change", switchTheme, false);
-toggleSwitchMenu.addEventListener("change", switchTheme, false);
+toggleSwitch.addEventListener('change', switchTheme, false);
+toggleSwitchMenu.addEventListener('change', switchTheme, false);

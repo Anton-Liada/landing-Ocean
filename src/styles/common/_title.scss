@@ -10,7 +10,7 @@
     color: $color-white;
 
     @include pad {
-      font-size: $fs-24 ;
+      font-size: $fs-24;
     }
 
     @include desktop {

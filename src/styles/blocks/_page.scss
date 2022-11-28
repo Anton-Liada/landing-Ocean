@@ -13,7 +13,8 @@
     &--with-menu {
       overflow: hidden;
 
-      & .page__header,
+      &
+      .page__header,
       .page__main {
         filter: blur(4px);
       }
@@ -72,13 +73,11 @@
 
     visibility: hidden;
     opacity: 0;
-    // transform: translateY(-100%);
     transition: all $transition-time;
 
     &:target {
       visibility: visible;
       opacity: 1;
-      // transform: translateY(0);
     }
   }
 }
