@@ -1,13 +1,16 @@
 {
-  "homepage": "http://Anton-Liada.github.io/landing-Ocean",
+  "homepage": "http://Anton-Liada.github.io/landing-Ocean/",
   "name": "landing-ocean",
   "version": "1.0.0",
   "description": "test task",
-  "main": "index.js",
+  "default": "dist/index.html",
   "type": "module",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "rm -rf build & npm run build",
+    "deploy": "gh-pages -d src",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.3",
@@ -16,15 +19,19 @@
     "@mate-academy/scripts": "^1.2.8",
     "@mate-academy/stylelint-config": "0.0.9",
     "@parcel/transformer-sass": "^2.8.0",
+    "@parcel/utils": "^2.8.0",
     "eslint": "^8.28.0",
     "eslint-plugin-node": "^11.1.0",
     "gh-pages": "^4.0.0",
     "linthtml-config-htmlacademy": "^1.0.3",
+    "parcel": "^2.8.0",
     "stylelint": "^14.15.0",
     "stylelint-config-recommended-scss": "^8.0.0",
     "stylelint-scss": "^4.3.0"
   },
   "dependencies": {
-    "accordion-js": "^3.3.2"
+    "@parcel/resolver-default": "^2.8.0",
+    "accordion-js": "^3.3.2",
+    "swiper": "^8.4.5"
   }
 }

@@ -1,6 +1,8 @@
 @import "../utils";
 
 .swiper {
+  margin: 0;
+
   &--slide1::before {
     content: "1";
   }

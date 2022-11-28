@@ -29,7 +29,7 @@
       width: 34px;
       left: 0;
       bottom: 0;
-      background-image: url(./images/icons/light.svg);
+      background-image: url("./styles/images/icons/light.svg");
       background-position: center;
       background-repeat: no-repeat;
       border: 1px solid $color-gray;
@@ -50,7 +50,7 @@
   }
 
   &__input:checked + &__slider:before {
-    background-image: url(./images/icons/dark.svg);
+    background-image: url("./styles/images/icons/dark.svg");
     background-color: $color-gray1;
     background-position: center;
     background-repeat: no-repeat;
