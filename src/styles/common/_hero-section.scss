@@ -15,8 +15,9 @@
     }
 
     @include desktop {
-      width: 225px;
+      width: 24%;
       margin-right: 15px;
+      margin-bottom: 0;
     }
 
     @include wxga {
@@ -29,7 +30,8 @@
     }
   }
 
-  &__main-title { // change naming!
+  &__main-title {
+    // change naming!
     padding-bottom: 16px;
     @include font-style($fw-700, $fs-36, 39px);
     text-align: center;
@@ -60,6 +62,7 @@
 
     @include full {
       font-size: $fs-50;
+      line-height: 65px;
     }
 
     &--styles {
@@ -86,6 +89,21 @@
       @include full {
         font-size: $fs-66;
       }
+    }
+  }
+
+  &__swiper {
+    @include desktop {
+      width: 75%;
+      height: 491px;
+    }
+
+    @include wxga {
+      height: 522px;
+    }
+
+    @include full {
+      height: 722px;
     }
   }
 

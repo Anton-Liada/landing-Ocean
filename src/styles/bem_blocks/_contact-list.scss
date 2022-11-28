@@ -27,7 +27,7 @@
     display: inline-block;
     margin-bottom: 11px;
     @include font-style($fw-700, $fs-18, 18px, $color-white);
-    @include hover(text-shadow,-3px 3px 1px $color-blue);
+    @include hover(text-shadow, $shadow-blue);
 
     @include pad {
       font-size: $fs-16;

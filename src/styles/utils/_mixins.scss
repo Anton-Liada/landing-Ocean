@@ -39,6 +39,11 @@
   }
 }
 
+@mixin container($size) {
+  padding-left: ($size);
+  padding-right: ($size);
+}
+
 @mixin font-style($weight, $size, $height, $color: $color-black2) {
   font-size: $size;
   font-weight: $weight;

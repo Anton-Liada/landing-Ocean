@@ -2,6 +2,7 @@
 
 .page {
   font-family: $ff-syncopate;
+  scroll-behavior: smooth;
 
   &__body {
     position: relative;
@@ -12,7 +13,7 @@
     &--with-menu {
       overflow: hidden;
 
-      & > .page__header,
+      & .page__header,
       .page__main {
         filter: blur(4px);
       }

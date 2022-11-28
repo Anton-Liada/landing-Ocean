@@ -44,7 +44,7 @@
 
   &__burger-rect,
   &__burger-line {
-    transition: $transition-time;
+    transition: all $transition-time;
   }
 
   &__burger-svg:hover &__burger-rect {
@@ -57,7 +57,7 @@
 }
 // background-color
 .dark-theme {
-  background-color: $color-black2;
+  background-color: $color-dark-theme;
   //color text
   & .page__header,
   h1,
@@ -70,6 +70,9 @@
     color: $color-white;
   }
   //header & menu
+  & .header__wrapper {
+    border-color: $color-white;
+  }
   & .header__burger-svg .header__burger-rect {
     fill: $color-white;
   }
@@ -87,7 +90,7 @@
   }
 
   & .menu__container {
-    background-color: $color-black2;
+    background-color: $color-dark-theme;
   }
 
   & .menu__social-svg {
@@ -97,10 +100,48 @@
   & .menu__cross-svg path {
     stroke: $color-white;
   }
-//---------
+
+  // accordion
+  & .accordion__btn,
+  .accordion__content,
+  .accordion__panel {
+    color: $color-white;
+    background-color: $color-dark-theme;
+  }
+
+  & .accordion:first-child {
+    border-color: $color-white;
+  }
+
+  & .accordion__btn {
+    border-color: $color-white;
+  }
+
+  & .is-active-ac .accordion__content {
+    border-color: $color-white;
+  }
+
+  & .accordion__svg path {
+    stroke: $color-white;
+  }
+
+  & .footer__decorate-line {
+    background-color: $color-dark-gray3;
+  }
+
+  //---------
   & .card {
     background-color: $color-dark-gray2;
     border-color: $color-white;
+
+    @include desktop {
+      @include hover(box-shadow, $shadow-blue-card2);
+    }
+  }
+
+  & .draggable div{
+    border: 1px solid $color-white;
+    background-color: $color-dark-gray3;
   }
   //border
   & .subscribe-section__wrapper {
@@ -119,5 +160,4 @@
   & .page__footer {
     background-color: $color-dark-gray2;
   }
-
 }

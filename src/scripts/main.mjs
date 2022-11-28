@@ -4,6 +4,8 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 //swiper
 const swiper = new Swiper(".swiper", {
+  fadeEffect: { crossFade: true, },
+  effect: 'fade',
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -11,7 +13,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 const cardSwiper = new Swiper(".card-swiper", {
-  // slidesPerView: 'auto',
   loop: false,
   autoHeight: false,
   spaceBetween: 10,
@@ -25,15 +26,15 @@ const cardSwiper = new Swiper(".card-swiper", {
       spaceBetween: 16,
     },
     1024: {
-      slidesPerView: 4.02,
+      slidesPerView: 4,
       spaceBetween: 16,
     },
     1366: {
-      slidesPerView: 4.01,
+      slidesPerView: 4,
       spaceBetween: 24,
     },
     1696: {
-      slidesPerView: 4.01,
+      slidesPerView: 4,
       spaceBetween: 32,
     },
   },

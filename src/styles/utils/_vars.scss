@@ -5,9 +5,11 @@ $color-white: #fff;
 $color-blue: #24a9f4;
 $color-dark-gray: #1a1a1a;
 $color-dark-gray2: #272727;
+$color-dark-gray3: #2d2d2d;
 $color-gray: #bebebe;
 $color-light-gray: #efefef;
 $color-aqua: #1485c5;
+$color-dark-theme: #191919;
 
 //fonts
 $ff-syncopate: "Syncopate", sans-serif;
@@ -49,5 +51,7 @@ $media-full-width: 1924px;
 $transition-time: 0.3s;
 
 //shadows
-$shadow-blue: -3px 3px 1px $color-blue;
+$shadow-blue-card: $color-blue -7px 7px 1px 1px, $color-black -7px 7px 1px 2px;
+$shadow-blue-card2: $color-blue -7px 7px 1px 1px, $color-white -7px 7px 1px 2px;
 $shadow-white: 3px 3px 4px $color-white;
+$shadow-blue: -3px 3px 1px #24a9f4;

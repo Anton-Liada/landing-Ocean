@@ -1,18 +1,12 @@
 @import "../utils";
 
 .card {
-  // max-width: 288px;
   text-align: center;
-  font-family: arial;
   border: 1px solid $color-black2;
-  @include hover(box-shadow,-7px 7px 1px $color-blue);
-  @include hover(box-shadow, 0 0 2px $color-black);
-  // box-shadow: #804020 0 0 0  3px,
-  // #ffffff 0 0 0  4px,
-  // #804020 0 0 0  7px,
-  // #ffffff 0 0 0  8px,
-  // #804020 0 0 0 15px;
-
+  transition: box-shadow, $transition-time;
+  @include desktop {
+    @include hover(box-shadow, $shadow-blue-card);
+  }
 
   &__img {
     height: 167px;
@@ -27,6 +21,7 @@
   &__title {
     padding-bottom: 4px;
     @include font-style($fw-700, $fs-16, 20px);
+    text-transform: uppercase;
 
     @include desktop {
       font-size: $fs-14;
