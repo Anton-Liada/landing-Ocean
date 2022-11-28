@@ -1,0 +1,108 @@
+@import "../utils";
+
+.menu {
+  display: flex;
+  justify-content: end;
+  max-width: 1924px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &__container {
+    width: 303px;
+    padding: 16px 30px 38px;
+    background-color: $color-white;
+
+    @include pad {
+      width: 440px;
+    }
+
+    @include wxga {
+      width: 487px;
+    }
+
+    @include full {
+      width: 544px;
+    }
+  }
+
+  &__cross {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 19px;
+  }
+
+  &__cross-svg {
+    @include wxga {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30vh;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    display: block;
+    @include font-style($fw-700, $fs-20, 20px);
+    text-transform: uppercase;
+    @include hover(text-shadow, $shadow-blue);
+
+    @include pad {
+      font-size: $fs-32;
+    }
+
+    @include wxga {
+      font-size: 36px;
+    }
+
+    &--indention {
+      margin-bottom: 26px;
+
+      @include desktop {
+        margin-bottom: 21px;
+      }
+
+      @include wxga {
+        margin-bottom: 31px;
+      }
+    }
+  }
+
+  &__switch-wrapper {
+    @include pad {
+      display: none;
+    }
+  }
+
+  &__switch {
+    margin-bottom: 24px;
+  }
+
+  &__contact-list {
+    margin-bottom: 39px;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  &__social-svg {
+    transition: $transition-time;
+  }
+
+  svg:hover &__social-svg {
+    fill: $color-blue;
+  }
+}

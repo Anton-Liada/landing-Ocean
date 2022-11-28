@@ -1,0 +1,80 @@
+@import "../utils";
+
+.footer {
+  padding-top: 40px;
+  color: $color-white;
+  background-color: $color-black2;
+
+  @include pad {
+    padding-top: 60px;
+  }
+
+  @include full {
+    padding-top: 56px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrapper {
+    @include full {
+      display: flex;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__wrapper-subscribe {
+    margin-bottom: 47px;
+
+    @include pad {
+      margin-bottom: 56px;
+    }
+
+    @include desktop {
+      margin-bottom: 62px;
+    }
+
+    @include full {
+      margin-right: 28px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 47px;
+
+    @include pad {
+      margin-bottom: 53px;
+    }
+
+    @include desktop {
+      margin-bottom: 62px;
+    }
+
+    @include full {
+      margin-bottom: 67px;
+    }
+  }
+
+  &__wrapper-contact {
+    margin-bottom: 60px;
+
+    @include full {
+      margin-bottom: 0;
+    }
+  }
+
+  &__decorate-line {
+    height: 57px;
+    background-color: $color-dark-gray;
+  }
+}

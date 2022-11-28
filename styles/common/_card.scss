@@ -1,0 +1,52 @@
+@import "../utils";
+
+.card {
+  text-align: center;
+  border: 1px solid $color-black2;
+  transition: box-shadow, $transition-time;
+
+  @include desktop {
+    @include hover(box-shadow, $shadow-blue-card);
+  }
+
+  &__img {
+    height: 167px;
+    padding-bottom: 11px;
+  }
+
+  &__wrapper {
+    padding: 0 24px 24px;
+    text-align: left;
+  }
+
+  &__title {
+    padding-bottom: 4px;
+    @include font-style($fw-700, $fs-16, 20px);
+    text-transform: uppercase;
+
+    @include desktop {
+      font-size: $fs-14;
+      line-height: 17px;
+    }
+
+    @include wxga {
+      font-size: $fs-16;
+      line-height: 22px;
+    }
+  }
+
+  &__description {
+    @include font-style($fw-400, $fs-16, 24px);
+    font-family: $ff-kyiv;
+
+    @include desktop {
+      font-size: $fs-14;
+      line-height: 22px;
+    }
+
+    @include wxga {
+      font-size: $fs-16;
+      line-height: 24px;
+    }
+  }
+}

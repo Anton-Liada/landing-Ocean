@@ -1,0 +1,121 @@
+@import "../utils";
+
+.dark-theme {
+  background-color: $color-dark-theme;
+
+  & .page__header,
+  h1,
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  a {
+    color: $color-white;
+  }
+
+  & .header__wrapper {
+    border-color: $color-white;
+  }
+  & .header__burger-svg
+  .header__burger-rect {
+    fill: $color-white;
+  }
+
+  & .header__burger-svg:hover
+  .header__burger-rect {
+    fill: $color-aqua;
+  }
+
+  & .header__burger-svg
+  .header__burger-line {
+    stroke: $color-black2;
+  }
+
+  & .header__burger-svg:hover
+  .header__burger-line {
+    stroke: $color-white;
+  }
+
+  & .menu__container {
+    background-color: $color-dark-theme;
+  }
+
+  & .menu__social-svg {
+    fill: $color-white;
+  }
+
+  & .menu__cross-svg path {
+    stroke: $color-white;
+  }
+
+  & .accordion__btn,
+  .accordion__content,
+  .accordion__panel {
+    color: $color-white;
+    background-color: $color-dark-theme;
+  }
+
+  & .accordion__btn:hover
+  path {
+    stroke: $color-blue;
+  }
+
+  & .accordion__btn {
+    @include hover(color, $color-blue);
+  }
+
+  & .accordion:first-child {
+    border-color: $color-white;
+  }
+
+  & .accordion__btn {
+    border-color: $color-white;
+  }
+
+  & .is-active-ac
+  .accordion__content {
+    border-color: $color-white;
+  }
+
+  & .accordion__svg
+  path {
+    stroke: $color-white;
+  }
+
+  & .footer__decorate-line {
+    background-color: $color-dark-gray3;
+  }
+
+  & .card {
+    background-color: $color-dark-gray2;
+    border-color: $color-white;
+
+    @include desktop {
+      @include hover(box-shadow, $shadow-blue-card2);
+    }
+  }
+
+  & .draggable
+  div {
+    border: 1px solid $color-white;
+    background-color: $color-dark-gray3;
+  }
+
+  & .subscribe-section__wrapper {
+    border-color: $color-white;
+  }
+
+  & .form__button {
+    background-color: $color-blue;
+    @include hover(background-color, $color-aqua);
+  }
+
+  & .social-links__link {
+    color: $color-black2;
+  }
+
+  & .page__footer {
+    background-color: $color-dark-gray2;
+  }
+}

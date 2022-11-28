@@ -1,0 +1,57 @@
+@import "../utils";
+
+.header {
+  @include desktop {
+    height: 111px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 82px;
+    height: 100%;
+    border-bottom: 1px solid $color-black2;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-right: 44px;
+    }
+  }
+
+  &__link-phone {
+    @include hover(text-shadow, $shadow-blue);
+  }
+
+  &__switch-wrapper {
+    display: none;
+
+    @include pad {
+      display: block;
+      margin: 0 42px 0 auto;
+    }
+  }
+
+  &__burger-rect,
+  &__burger-line {
+    transition: all $transition-time;
+  }
+
+  &__burger-svg:hover &__burger-rect {
+    fill: $color-white;
+  }
+
+  &__burger-svg:hover &__burger-line {
+    stroke: $color-black2;
+  }
+}
