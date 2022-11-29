@@ -27,6 +27,11 @@
 
     font-family: $ff-kyiv;
     @include font-style($fw-400, $fs-16, 22px);
+    outline: none;
+
+    @include pad {
+      margin-bottom: 0;
+    }
 
     @include wxga {
       font-size: 18px;
@@ -51,4 +56,14 @@
       width: 44%;
     }
   }
+}
+
+.invalid {
+  border: 2px solid $color-red;
+  color: $color-red;
+}
+
+.valid {
+  border: 2px solid $color-green;
+  color: $color-green;
 }

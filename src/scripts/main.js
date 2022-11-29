@@ -8,9 +8,31 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-document.querySelector('form').addEventListener('click', (event) => {
+const applicantForm = document.querySelector('.form');
+applicantForm.addEventListener('submit', handleFormSubmit);
+
+function handleFormSubmit(event) {
   event.preventDefault();
-});
+
+  const input = document.querySelector('.form__input');
+
+  const pattern =
+    /^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!pattern.test(input.value.trim())) {
+    input.classList.add('invalid');
+    setTimeout(() => {
+      input.classList.remove('invalid');
+    }, 2000);
+  } else {
+    input.value = '';
+
+    input.classList.add('valid');
+    setTimeout(() => {
+      input.classList.remove('valid');
+    }, 2000);
+  }
+}
 
 const toggleSwitch = document.querySelector('.switch__input');
 const toggleSwitchMenu = document.querySelector('.switch__input-menu');
