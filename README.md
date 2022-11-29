@@ -1,5 +1,5 @@
 # Landing page
-Implemented responsive page in five break points: 375px/768px/1024px/1920px/.
+Implemented responsive page in five break points: 375px/768px/1024px/1366px/1920px/.
 
 **--Here is [DEMO LINK](https://anton-liada.github.io/landing-Ocean/)**
 
