@@ -604,12 +604,17 @@
               team
             </h2>
 
-            <form class="form subscribe-section__form" action="POST">
+            <form
+              class="form subscribe-section__form"
+              novalidate method="get"
+              name="subscribe-form"
+            >
               <label class="form__label">
                 <input
                   type="email"
                   class="form__input"
                   placeholder="Email"
+                  required
                 />
               </label>
 
