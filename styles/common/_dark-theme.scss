@@ -106,7 +106,7 @@
     border-color: $color-white;
   }
 
-  & .form__button {
+  & .form__submit-email {
     background-color: $color-blue;
     @include hover(background-color, $color-aqua);
   }
