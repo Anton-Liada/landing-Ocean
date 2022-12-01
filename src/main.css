@@ -487,7 +487,14 @@ meter {
     margin-right: 44px;
   }
 }
+.header__link-description {
+  font-size: 0.81rem;
+  font-weight: 400;
+  line-height: 13px;
+  color: #bebebe;
+}
 .header__link-phone {
+  margin-bottom: 11px;
   transition: text-shadow 0.3s;
 }
 .header__link-phone:hover {
@@ -1050,83 +1057,132 @@ svg:hover .menu__social-svg {
   }
 }
 
-.form {
+.form-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  width: 100%;
+  height: 40px;
+  box-shadow: 2px 3px 4px #1a1a1a;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
-  .form {
-    flex-direction: row;
+  .form-content {
     width: 624px;
   }
 }
 @media (min-width: 1024px) {
-  .form {
+  .form-content {
     width: 831px;
   }
 }
-.form__label {
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 100%;
+  height: 100%;
 }
-.form__input {
+.form__add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 48px;
-  margin-bottom: 16px;
-  padding-left: 14px;
+  height: 100%;
+  padding: 0 20px;
   font-family: "KyivTypeSerif", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 16px;
   color: #101010;
+  border: none;
   outline: none;
 }
-@media (min-width: 768px) {
-  .form__input {
-    margin-bottom: 0;
-  }
-}
 @media (min-width: 1366px) {
-  .form__input {
-    font-size: 18px;
-    line-height: 24px;
+  .form__add-email {
+    font-size: 1.12rem;
   }
 }
-.form__button {
-  height: 48px;
-  width: 100%;
-  font-size: 1rem;
+.form__submit-email {
+  font-family: "Syncopate", sans-serif;
+  font-size: 0.88rem;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 0;
   color: #fff;
-  text-transform: uppercase;
-  background-color: #101010;
-  border: none;
+  background: #101010;
   transition: background-color 0.3s;
 }
-.form__button:hover {
+.form__submit-email:hover {
   background-color: #24a9f4;
 }
 @media (min-width: 768px) {
-  .form__button {
-    width: 50%;
+  .form__submit-email {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1366px) {
+  .form__submit-email {
+    font-size: 1.12rem;
+  }
+}
+.form__submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .form__submit-email {
+    width: 208px;
   }
 }
 @media (min-width: 1024px) {
-  .form__button {
-    width: 44%;
+  .form__submit-email {
+    width: 251px;
   }
 }
-
-.invalid {
-  border: 2px solid rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
+.form__submit-email:active {
+  background-color: #1485c5;
 }
-
-.valid {
-  border: 2px solid rgb(23, 206, 23);
-  color: rgb(23, 206, 23);
+.form.done .form__submit-email {
+  width: calc(100% - 2px);
+  background: #1485c5;
+}
+.form__submit-email .form__before-submit, .form__submit-email .form__after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: all 0.3s ease-in-out;
+}
+.form.done .form__submit-email .form__before-submit, .form:not(.done) .form__submit-email .form__after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+.form .form__submit-email .form__after-submit {
+  transition-delay: 0.3s;
+}
+.form:not(.done) .form__submit-email .form__before-submit, .form.done .form__submit-email .form__after-submit {
+  visibility: visible;
+  opacity: 1;
 }
 
 .switch {
@@ -1510,11 +1566,11 @@ svg:hover .menu__social-svg {
 .dark-theme .subscribe-section__wrapper {
   border-color: #fff;
 }
-.dark-theme .form__button {
+.dark-theme .form__submit-email {
   background-color: #24a9f4;
   transition: background-color 0.3s;
 }
-.dark-theme .form__button:hover {
+.dark-theme .form__submit-email:hover {
   background-color: #1485c5;
 }
 .dark-theme .social-links__link {

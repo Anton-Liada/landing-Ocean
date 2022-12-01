@@ -29,7 +29,12 @@
     }
   }
 
+  &__link-description {
+    @include font-style($fw-400, $fs-13, 13px, $color-gray);
+  }
+
   &__link-phone {
+    margin-bottom: 11px;
     @include hover(text-shadow, $shadow-blue);
   }
 
