@@ -10,7 +10,7 @@
 
 .form-content {
   width: 100%;
-  height: 40px;
+  height: 48px;
   box-shadow: 2px 3px 4px $color-dark-gray;
   overflow: hidden;
 
@@ -100,12 +100,11 @@
   &__submit-email
   &__after-submit {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 38px;
     transition: all $transition-time ease-in-out;
   }
 
