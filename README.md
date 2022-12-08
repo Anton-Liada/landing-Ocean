@@ -33,6 +33,6 @@ npm run dev
 
 ## Library
 - Swiper
-- Accrodion
+- Accоrodion
 
 **Thank you for your attention and may the force be with you!**
